@@ -18,22 +18,22 @@ function myButtonClicked() {
   var userInteger = parseInt(document.getElementById("userInteger").value);
   var pi;
   var number = 1;
-  var plusOrMinus = "minus";
+  var positiveOrNegative = "minus";
 
   pi = 4 / number;
   while (userInteger > 1) {
-    if (plusOrMinus == "minus") {
-      numbeer = number + 2;
+    if (positiveOrNegative == "minus") {
+      number = number + 2;
       pi = pi - (4 / number);
-      plusOrMinus = "plus";
-    } else if (plusOrMinus == "plus") {
+      positiveOrNegative = "plus";
+    } else if (positiveOrNegative == "plus") {
       number = number + 2;
       pi = pi + (4 / number)
-      plusOrMinus = "minus";
+      positiveOrNegative = "minus";
     }
     userInteger = userInteger - 1;
   }
-  plusOrMinus = "minus";
+  positiveOrNegative = "minus";
   number = 1;
   document.getElementById("answers").innerHTML = "The answer is: " + pi;
 }
