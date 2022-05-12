@@ -1,8 +1,16 @@
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Zaida Hammel
+// Created on: May 2022
 // This file contains the JS functions for index.html
 
-function myButtonClicked() {
-  // this function displays "Hello, World!"
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>";
+/**
+ * Check servie worker.
+ */
+ if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS20-Assignment-5-JS/sw.js", {
+    scope: "/ICS20-Assignment-5-JS/",
+  });
 }
+
+/**
+ * This function
+ */
