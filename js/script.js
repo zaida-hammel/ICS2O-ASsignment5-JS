@@ -20,7 +20,7 @@ function myButtonClicked() {
   var number = 1;
   var plusOrMinus = "minus";
 
-  pi = 4 / num;
+  pi = 4 / number;
   while (userInteger > 1) {
     if (plusOrMinus == "minus") {
       numbeer = number + 2;
@@ -35,5 +35,5 @@ function myButtonClicked() {
   }
   plusOrMinus = "minus";
   number = 1;
-  document.getElementById("answer").innerHTML = "The answer is: " + pi;
+  document.getElementById("answers").innerHTML = "The answer is: " + pi;
 }
